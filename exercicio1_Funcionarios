@@ -1,0 +1,59 @@
+algoritmo "exercicio1_vetor"
+// Função :
+// Autor : Pedro Victor
+// Data : 17/03/2021
+// Seção de Declarações 
+var
+
+nomes: vetor[1..4] de caractere
+dias: vetor[1..4] de inteiro
+salarios: vetor[1..4] de real
+
+i: inteiro
+
+
+inicio
+// Seção de Comandos
+
+      para i <- 1 ate 4 faca
+
+           escreval("DIGITE O NOME ", i, "º FUNCIONARIO")
+           leia(nomes[i])
+           escreval("DIGITE A QUANTIDADE DE DIAS TRABALHADOS DE ", nomes[i])
+           leia(dias[i])
+           escreval("DIGITE O SALARIO DE ", nomes[i])
+           leia(salarios[i])
+           escreval("=========================")
+      fimpara
+      
+      escreval("======RELATÓRIO MENSAL=======")
+      escreval("NOME   ", "DIAS   ", "SALÁRIOS   ")
+      para i <- 1 ate 4 faca
+           escreva(nomes[i] , "   ",  dias[i] , "   ", salarios[i] )
+           escreval()
+      fimpara
+      
+
+
+
+
+     
+     
+     
+
+     
+
+     
+     
+     
+     
+
+
+
+
+
+       
+
+
+
+fimalgoritmo
