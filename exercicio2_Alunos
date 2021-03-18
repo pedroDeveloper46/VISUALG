@@ -1,0 +1,42 @@
+algoritmo "exercicio2_vetor"
+// Função :
+// Autor :
+// Data : 17/03/2021
+// Seção de Declarações 
+var
+ nomes: vetor[1..4] de caractere
+ 
+ notas: vetor[1..4, 1..4] de real
+
+i, j: inteiro
+
+
+inicio
+// Seção de Comandos
+
+   para i <- 1 ate 4 faca
+       escreval("DIGITE O NOME DO ", i, "º ALUNO")
+       leia(nomes[i])
+       para j <- 1 ate 4 faca
+          escreval("DIGITE A ", j, "ª NOTA")
+          leia(notas[i,j])
+       fimpara
+       
+   fimpara
+   
+   
+   para i <- 1 ate 4 faca
+       escreval(nomes[i])
+       para j <- 1 ate 4 faca
+           escreval("NOTA" ,j , ": ", notas[i,j])
+       fimpara
+       escreval()
+
+   fimpara
+
+
+
+
+
+
+fimalgoritmo
