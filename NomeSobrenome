@@ -1,0 +1,28 @@
+algoritmo "Nome e Sobrenome"
+// Função :
+// Autor : Pedro Victor
+// Data : 21/03/2021
+// Seção de Declarações 
+var
+pessoas: vetor[1..5, 1..2] de caractere
+i, j: inteiro
+
+inicio
+// Seção de Comandos
+
+       para i<- 1 ate 5 faca
+           escreval("DIGITE O NOME")
+           leia(pessoas[i, 1])
+           escreval("DIGITE O SOBRENOME DE ", pessoas[i,1])
+           leia(pessoas[i, 2])
+           escreval("===========")
+       fimpara
+       
+       
+       para i <- 1 ate 5 faca
+            para j <- 1 ate 2 faca
+                escreva(pessoas[i,j], " ")
+            fimpara
+            escreval()
+       fimpara
+fimalgoritmo
