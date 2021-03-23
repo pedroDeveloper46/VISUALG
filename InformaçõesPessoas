@@ -1,0 +1,44 @@
+algoritmo "Informações Pessoais"
+// Função :
+// Autor : Pedro Victor
+// Data : 21/03/2021
+// Seção de Declarações 
+var
+pessoas: vetor[1..5, 1..4] de caractere
+i, j,numero: inteiro
+inicio
+// Seção de Comandos
+       para i <- 1 ate 5 faca
+            escreval("DIGITE O NOME")
+            leia(pessoas[i,1])
+            escreval("DIGITE O RG DE ", pessoas[i,1])
+            leia(pessoas[i,2])
+            escreval("DIGITE A DATA DE NASCIMENTO DE ", pessoas[i,1])
+            leia(pessoas[i,3])
+            escreval("DIGITE O EMAIL DE ", pessoas[i,1])
+            leia(pessoas[i,4])
+            escreval("=================")
+       fimpara
+       
+       para i <- 1 ate 5 faca
+           escreval("DIGITE ", i, " PARA BUSCAR AS INFORMAÇÕES DE " ,pessoas[i,1])
+       fimpara
+       
+       escreval("==========")
+       escreval("DIGITE O NÚMERO DA PESSOA DESEJADA")
+       leia(i)
+       
+       escreval("AS INFORMAÇÕES DE", pessoas[i,1])
+       para j <- 1 ate 4 faca
+           escreval(pessoas[i,j])
+       fimpara
+       
+       escreval("NOME: " , pessoas[i,1])
+       escreval("RG: " , pessoas[i,2])
+       escreval("DATA DE NASCIMENTO: " , pessoas[i,3])
+       escreval("EMAIL: " , pessoas[i,4])
+       
+       
+       
+       
+fimalgoritmo
