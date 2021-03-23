@@ -1,0 +1,26 @@
+algoritmo "Maior Número"
+// Função :
+// Autor : Pedro Victor
+// Data : 21/03/2021
+// Seção de Declarações 
+var
+numeros: vetor[1..5] de inteiro
+i, maior: inteiro
+inicio
+// Seção de Comandos
+
+   maior <- 0
+   
+   para i<- 1 ate 5 faca
+        escreval("DIGITE UM NÚMERO")
+       leia(numeros[i])
+   fimpara
+   
+   para i<- 1 ate 5 faca
+        se numeros[i] > maior entao
+            maior <- numeros[i]
+        fimse
+   fimpara
+   
+   escreval("O MAIOR NÚMERO É ", maior)
+fimalgoritmo
